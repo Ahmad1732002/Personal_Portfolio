@@ -1,0 +1,139 @@
+//modifying some default bootstrap libraries
+$primary: #007bff;
+$bodyBackground:#C9EEFF; 
+$titleBackground: #000000;
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+//add extra stylings that I need on top of bootstrap
+html{
+  background-color: #C9EEFF;
+}
+
+#templateBody{
+  background-color: $bodyBackground;
+}
+.row {
+  padding-bottom: 20px;
+}
+
+
+
+
+// h1{
+    
+//     font-family: "sans-serif";
+// }
+h1 {
+  font-size: 44px; /* adjust the font size of the h1 title */
+  font-weight: bold; /* make the h1 title bold */
+  font-family: "Open Sans", sans-serif; /* Option 1 */
+
+ 
+  color: #0066CC; /* set the text color to light blue */
+}
+
+.container {
+    padding-top: 20px;
+    
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 20px;
+      justify-content: flex-end;
+      li {
+        margin-left: 1rem;
+        &:first-child {
+          margin-left: 0;
+        }
+        a {
+          color: #333;
+          text-decoration: none;
+          color: #fff;
+          background-color: $primary;
+          
+        }
+      }
+     
+      
+    }
+  }
+
+//styling the search form 
+/* Styling the form wrapper */
+.form-wrapper {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left:50rem;
+
+}
+
+
+/* Styling the search input */
+#search {
+  border: none;
+  padding: 10px;
+  
+  width: 300px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#search:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+input[type="text"] {
+  margin-bottom: 10px;
+}
+
+/* Styling the submit button */
+#submitBtn {
+  background-color: #0066CC;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#submitBtn:hover {
+  background-color: #0052a3;
+}
+
+.welcome-message {
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.welcome-message h2 {
+  font-size: 48px;
+  color: #333;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #0066CC;
+}
+
+.welcome-message p {
+  font-size: 24px;
+  color: #666;
+  line-height: 1.5;
+  color: #0066CC;
+}
+
+  
+  
+  
+  
+  
+
+
+  

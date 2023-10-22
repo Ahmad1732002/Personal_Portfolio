@@ -1,0 +1,22 @@
+{{!-- styling for the form was inspired from here: https://www.sliderrevolution.com/resources/css-search-box/ --}}
+<form class="form-wrapper" method="GET" action="">
+  <input type="text" placeholder="Search for keywords in title..." name="keyword" id="search">
+  <input id='submitBtn' type="submit" value="Search" >
+</form>
+
+<div class="container">
+  
+  <div class="row">
+    {{#each projects}}
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{this.projectTitle}}</h5>
+          <p class="card-text">{{this.projectDescription}}</p>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    {{/each}}
+  </div>
+</div>
